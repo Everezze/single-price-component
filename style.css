@@ -16,8 +16,8 @@ body{
     font-family: "Karla",sans-serif;
 }
 
-p{
-    line-height: 1.5rem;
+.why p{
+    line-height: 1.42rem;
 }
 
 h1,h2,h3,p{
@@ -31,7 +31,7 @@ h1,h2,h3,p{
 
 .join p{
     line-height: 1.7rem;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 h1{
@@ -86,7 +86,8 @@ button{
 }
 
 main{
-    max-width: 600px;
+    margin: 0 auto;
+    max-width: 700px;
     color:var(--fg-clr);
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -107,4 +108,22 @@ article{
 .why{
     --bg-clr: hsl(179,62%,48%);
     --fg-clr: white;
+}
+
+@media screen and (min-width:619px) {
+    .price,.why{
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+    }
+
+    .why{
+        margin-left: -3.8px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    :root{
+        --article-padd: 3rem 2.5rem;
+    }
 }
